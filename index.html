@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <section class="container">
+        <figure class="bg-image">
+            <div class="logo-header">
+                <img src="" alt="" class="logo">
+                <h1 class="logo-text">ODIN</h1>
+            </div>
+        </figure>
+        <div class="form-section">
+            <div class="article">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.You know you want to.</div>
+            <form action="" class="form" method="POST">
+                <fieldset>
+                    <legend>Lets do this!</legend>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" disabled>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="number" name="phone-number" id="phone-number" disabled>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W){8,}$" name="password" required>
+                        <label for="password">COMFIRM PASSWORD</label>
+                        <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W){8,}$" name="password" required>
+                    </div>
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <div class="question">
+                    <p>Already have an account?</p>
+                    <a href="">Log in</a>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
