@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    appearance: none;
+    text-decoration: none;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+.container {
+    display: flex;
+    max-width: 100rem;
+    margin-inline: auto;
+}
+.bg-image {
+    position: relative;
+    max-width: 40rem;
+    min-width: 35rem;
+    min-height: 70rem;
+    background-image: url(https://images.unsplash.com/photo-1724554362949-5370c51ded7d?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.logo-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10rem;
+    position: absolute;
+    top:10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Norse-Bold !important;
+}
+.logo {
+    width: 6rem;
+    height: 7rem;
+    
+}
+.logo-text {
+    color: white;
+    font-size: 5rem;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    gap: 4rem;
+    padding-left: 3rem;
+    justify-content: center;
+}
+label {
+    display: block;
+    padding-bottom: .5rem;
+}
+.form-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content:left;
+    padding-bottom: 3rem;
+}
+
+.input-container {
+    padding-top: 1rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+input {
+    width: 20rem;
+    border-radius: .5rem;
+    border: .15rem solid rgba(0, 0, 0, 0.3);;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+input:focus {
+    outline-color: blue;
+    box-shadow: .2rem .1rem .4rem grey;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input[required] ~ label::after {
+    content: "*";
+    color: red;
+}
+.article, legend {
+ font-size: 1.8rem;
+ font-weight: 700;
+ max-width: 55rem;
+}
+
+.double-margin {
+    margin-bottom: 2rem;
+}
+fieldset {
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+button {
+    max-width: 23rem;
+    font-size: 1.6rem;
+    padding: 1.3rem 5rem;
+    border-radius: 1rem;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    border: .1rem solid white;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:white;
+    color: #596D48;
+    border: .1rem solid #596D48;
+}
+
+.question {
+    display: flex;
+    gap: .1rem;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+.question > a {
+    color: green;
+    font-weight: bold;
+}
+figcaption {
+    position: absolute;
+    color: white;
+    bottom: 1rem;
+    left: 25%;
+}
+
+figcaption a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+    .bg-image {
+        min-height: 20rem;
+        width: 100%;
+        min-width: 100%;
+    }
+    .logo-container {
+        top: 5rem;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .form-list {
+        justify-content: center;
+        width: 100%;
+    }
+    .article {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    legend {
+        text-align: center;
+    }
+    .form {
+        align-items: center;
+    }
+
+    .form-section {
+        padding-left: 0;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    button, .question {
+        margin-left: 0;
+    }
+}

@@ -9,29 +9,46 @@
 <body>
     <section class="container">
         <figure class="bg-image">
-            <div class="logo-header">
-                <img src="" alt="" class="logo">
+            <div class="logo-container">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="" class="logo">
                 <h1 class="logo-text">ODIN</h1>
             </div>
+            <figcaption>Photo by <a href="https://unsplash.com/@uranwang">Uran Wang</a> on <a href="https://unsplash.com/photos/a-person-walking-down-a-path-in-the-rain-ITzcIAcCdZM">Unsplash</a></a></figcaption>
         </figure>
         <div class="form-section">
-            <div class="article">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.You know you want to.</div>
+            <div class="article">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p class="double-margin">Sign up now to get started.</p>
+                <p class="double-margin">You know you want to.</p>
+            </div>
             <form action="" class="form" method="POST">
                 <fieldset>
-                    <legend>Lets do this!</legend>
-                    <div>
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" disabled>
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="number" name="phone-number" id="phone-number" disabled>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W){8,}$" name="password" required>
-                        <label for="password">COMFIRM PASSWORD</label>
-                        <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W){8,}$" name="password" required>
+                    <legend>Let's do this!</legend>
+                    <div class="form-list">
+                        <div class="input-container">
+                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="first-name">FIRST NAME</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="last-name">LAST NAME</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" id="email">
+                            <label for="email">EMAIL</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone-number" id="phone-number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <label for="phone-number">PHONE NUMBER</label>                        </div>
+                        <div class="input-container">
+                            <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W){8,}$" name="password" required>
+                            <label for="password">PASSWORD</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W){8,}$" name="password" required>
+                            <label for="password">COMFIRM PASSWORD</label>
+
+                        </div>
                     </div>
                 </fieldset>
                 <button type="submit">Create Account</button>
